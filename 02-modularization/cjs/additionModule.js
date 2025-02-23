@@ -8,3 +8,10 @@ function calculateSum(x, y) {
 const author = 'Harsh Tambe';
 
 module.exports = { calculateSum, author };
+
+/*
+another way
+
+module.exports.calculateSum = calculateSum;
+module.exports.author = author;
+*/
