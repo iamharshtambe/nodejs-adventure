@@ -4,7 +4,7 @@ const a = 100;
 
 setImmediate(() => console.log('setImmediate'));
 
-Promise.resolve(() => console.log('Promise'));
+Promise.resolve().then(() => console.log('Promise'));
 
 fs.readFile('./test.txt', 'utf8', () => {
    console.log('File reading CB');
@@ -23,11 +23,3 @@ function printA() {
 printA();
 
 console.log('Last line of the file');
-
-//100
-// last
-// process
-// promise
-// Timer
-// setImm
-// fs
